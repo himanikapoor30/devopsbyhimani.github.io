@@ -1,99 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Git - My DevOps Space</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      padding-top: 60px;
+      background-color: #f7f8fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    .container {
-      max-width: 900px;
+
+    .navbar {
+      background-color: #24292e;
     }
-    .heading {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: #d73a49;
+
+    .navbar-brand,
+    .nav-link {
+      color: #ffffff !important;
+    }
+
+    .git-header {
+      background: linear-gradient(90deg, #FF6F61, #ff9478);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .git-header img {
+      max-width: 120px;
       margin-bottom: 20px;
     }
-    .section-title {
-      font-size: 1.5rem;
-      margin-top: 30px;
-      color: #333;
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
     }
-    .code-box {
-      background-color: #f1f1f1;
-      padding: 15px;
-      border-radius: 5px;
-      font-family: monospace;
-      white-space: pre-wrap;
+
+     .section-heading {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      border-bottom: 2px solid #FF6F61;
+      display: inline-block;
     }
-    .flipbook-link {
-      background-color: #e6f7ff;
-      padding: 15px;
-      border-left: 5px solid #007bff;
+
+
+    .card {
+      width: 300px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 60px;
+      height: auto;
       margin-top: 20px;
     }
-    .back-btn {
-      margin-top: 40px;
+
+    .card-body h5 {
+      font-weight: 600;
+      font-size: 1.3rem;
     }
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      border-bottom: 2px solid #FF6F61;
+      display: inline-block;
+    }
+    .notes-section {
+      background-color: #ffffff;
+      border: 2px soild #FF6F61;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .notes-img {
+      width: 100%;
+      max-width: 600px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+  
+
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1 class="heading">Git - Version Control with AWS EC2</h1>
-    <p>Hi! 👋 This page contains everything I learned about Git, from using it locally to deploying it on an AWS EC2 instance.</p>
+ <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My DevOps Space</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="tools.html">Tools Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="notes.html">Notes</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Optional YouTube video -->
-    <h3 class="section-title">🎥 Video I Followed</h3>
-    <p>YouTube: <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_LINK" target="_blank">Git on EC2 Instance</a></p>
+  <!-- Header -->
+  <div class="git-header">
+    <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo" />
+    <h1>Git: Version Control Mastery</h1>
+    <p1>Explore what I’ve learned and built using Git in my DevOps journey.</p1>
+  </div>
 
-    <!-- Key Concepts -->
-    <h3 class="section-title">📚 Key Concepts I Learned</h3>
-    <ul>
-      <li>What is Git and why we use it</li>
-      <li>Basic Git commands: <code>init</code>, <code>add</code>, <code>commit</code>, <code>push</code></li>
-      <li>How to clone and push a repo</li>
-      <li>Setting up Git on AWS EC2 using SSH</li>
-      <li>Using GitHub as remote</li>
-    </ul>
+    <h2 class="section-heading">What I’ve Learned in Git</h2>
+  <div class="card-grid">
 
-    <!-- Flipbook or PDF -->
-    <div class="flipbook-link">
-      <h4>📖 My Git Notes</h4>
-      <p>You can view my handwritten notes as a flipbook:</p>
-      <a href="https://your-flipbook-link.com" target="_blank">📄 Open Flipbook</a><br>
-      OR<br>
-      <a href="/pdfs/git-notes.pdf" target="_blank">⬇️ Download PDF Version</a>
+    <div class="card text-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="mx-auto d-block" alt="Git Basics Icon">
+      <div class="card-body">
+        <h5 class="card-title">Git Basics</h5>
+        <p class="card-text">Understand what Git is, and learn core commands like init, add, commit, status, and log.</p>
+      </div>
     </div>
 
-    <!-- Key Learnings -->
-    <h3 class="section-title">🧠 My Key Learnings</h3>
-    <ul>
-      <li>Git is a distributed version control system</li>
-      <li>Helps track changes and collaborate easily</li>
-      <li>EC2 setup taught me how to use Git in cloud environments</li>
-    </ul>
-
-    <!-- Git Commands -->
-    <h3 class="section-title">📦 Common Git Commands</h3>
-    <div class="code-box">
-      git init<br>
-      git clone &lt;repo-url&gt;<br>
-      git add .<br>
-      git commit -m "your message"<br>
-      git push origin main
+    <div class="card text-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919847.png" class="mx-auto d-block" alt="GitHub Icon">
+      <div class="card-body">
+        <h5 class="card-title">GitHub Integration</h5>
+        <p class="card-text">Push, pull, clone and connect local repo with GitHub using SSH or HTTPS.</p>
+      </div>
     </div>
 
-    <!-- Back to Tools -->
-    <div class="back-btn">
-      <a href="https://himanikapoor30.github.io/devopsbyhimani.github.io/" class="btn btn-outline-primary">← Back to Tools Dashboard</a>
+    <div class="card text-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" class="mx-auto d-block" alt="Branching Icon">
+      <div class="card-body">
+        <h5 class="card-title">Branching & Merging</h5>
+        <p class="card-text">Work with multiple branches, merge changes and resolve merge conflicts effectively.</p>
+      </div>
+    </div>
+
+    <div class="card text-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/942/942790.png" class="mx-auto d-block" alt="Collaboration Icon">
+      <div class="card-body">
+        <h5 class="card-title">Team Collaboration</h5>
+        <p class="card-text">Collaborate using Git workflows like Forking, Pull Requests, and feature branching.</p>
+      </div>
     </div>
   </div>
+
+<!-- Handwritten Notes -->
+    <h2 class="section-title">📝 My Handwritten Notes</h2>
+    <div class="notes-section">
+      <p>Here are my personal notes on Git. I use them to quickly revise commands and concepts.</p>
+      <!-- You can replace the src link with your actual image -->
+      <img src="your-handwritten-notes.jpg" alt="Handwritten Git Notes" class="notes-img">
+      <p class="mt-3">If you'd like a PDF version, feel free to contact me via the Contact section.</p>
+    </div>
+
+    <!-- Projects -->
+   <div class="container my-5">
+  <h2 class="mb-4">🚀 Projects with Git</h2>
+  <div class="row text-center">
+
+    <!-- Project 1 -->
+    <div class="notes-section">
+     
+       <h5>CI/CD Demo Project</h5>
+          <p>A live project showing Git used in CI/CD pipeline.</p>
+          <a href="https://github.com/your-git-project" target="_blank" class="btn btn-outline-danger btn-sm">View on GitHub</a>
+    </div>
+    <!-- Project 2 -->
+    <div class="notes-section">
+      <h5>Version Control Portfolio</h5>
+          <p>This very website is version controlled using Git!</p>
+          <a href="https://github.com/your-website-repo" target="_blank" class="btn btn-outline-danger btn-sm">Website Repo</a>
+    </div>
+  </div>
+</div>
+ <p class="mt-5">
+      <a href="https://himanikapoor30.github.io/devopsbyhimani.github.io/">← Back to Homepage</a>
+      </p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5 text-muted">
+    &copy; 2025 Himani Kapoor | Built with Git ❤️
+  </footer>
+
 
 </body>
 </html>
