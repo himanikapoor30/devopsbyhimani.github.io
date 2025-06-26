@@ -4,15 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Himani Kapoor – DevOps Portfolio</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate.css for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
   <style>
     body {
-      background-color: #F9F9F9;
-      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fdfbff, #ffe0f7);
+      font-family: 'Poppins', sans-serif;
     }
+
     .navbar {
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
+
     .navbar-brand {
       font-weight: bold;
       font-size: 1.5rem;
@@ -26,60 +37,98 @@
       font-size: 1.5rem;
       color: #333;
     }
+
     .navbar-nav .nav-link {
       font-weight: 600;
       font-size: 1.10rem;
       color: #333 !important;
     }
+
     .hero {
       padding: 60px 20px;
-      background-color: #ffffff;
+      background: linear-gradient(to right, #fff0f5, #f0f0ff);
       text-align: center;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
     .hero h1 {
       font-weight: 700;
+      animation: fadeInDown 1s ease-in-out;
     }
-    .dashboard-card {
+
+     .dashboard-card {
       padding: 30px;
       height: 150px;
       background-color: white;
-      border: 5px solid #007BFF;
-      border-radius: 10px;
+      border: 4px solid #007bff;
+      border-radius: 12px;
       transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 10px rgba(0,0,0,0.07);
     }
+
     .dashboard-card:hover {
-      background-color: #f0e9ff;
+      background-color: #e9f5ff;
       transform: translateY(-5px);
+      border-color: #0056b3;
+
+
     }
+
     .tools-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 30px;
     }
+
     .tool-box {
       background-color: white;
-      border: 5px solid #ddd;
-      border-radius: 10px;
+      border: 4px solid #007bff;
+      border-radius: 12px;
+
       padding: 20px;
       text-align: center;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
+
     .tool-box:hover {
-      transform: translateY(-5px);
-      background-color: #fffaf0;
+      transform: scale(1.05);
+      background: #fffaf0;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
     }
+
     .tool-icon {
       width: 100px;
       height: 100px;
       object-fit: contain;
       margin-bottom: 10px;
     }
+
     .tool-name {
       font-weight: 600;
       font-size: 1.1rem;
       color: #333;
     }
+
+    .section-title {
+      font-weight: bold;
+      color: black;
+      text-shadow: 1px 1px 2px #d6b3ff;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .status-badge {
+      cursor: pointer;
+      font-size: 0.9rem;
+      padding: 6px 10px;
+      border-radius: 5px;
+    }
+
+    table.table-sm th,
+    table.table-sm td {
+      padding: 0.4rem;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -87,8 +136,33 @@
       background-color: #ffffff;
       font-size: 1rem;
     }
+
+  .progress-table {
+    border: px solid #007bff;
+      border-radius: 12px;
+
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.4); /* Soft glow */
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .progress-table td,
+  .progress-table th,
+  .progress-table tr {
+    border: none !important; /* Remove internal lines */
+  }
+
+  .progress-table td {
+    padding: 15px;
+    background-color: #ffffff;
+  }
+
   </style>
 </head>
+
 <body>
 
   <!-- Navbar -->
@@ -108,14 +182,14 @@
 
   <!-- Hero -->
   <section class="hero">
-    <h1>👩‍💻 Himani Kapoor</h1>
-    <p class="lead">From HR to DevOps • My Learning Journey in Action 🚀</p>
-    <p>This website showcases the DevOps tools I’ve learned, along with my notes and hands-on projects. Built with guidance, curiosity, and determination!</p>
+    <h1 class="animate__animated animate__fadeInDown">👩‍💻 Himani Kapoor</h1>
+    <p class="lead animate__animated animate__fadeInUp">From HR to DevOps • My Learning Journey in Action 🚀</p>
+    <p class="animate__animated animate__fadeInUp">This website showcases the DevOps tools I’ve learned, along with my notes and hands-on projects. Built with guidance, curiosity, and determination!</p>
   </section>
 
   <!-- Explore Dashboard -->
   <div class="container text-center my-5">
-    <h2 class="mb-4">🚀 Explore</h2>
+    <h2 class="mb-4 section-title">🚀 Explore</h2>
     <div class="row">
       <div class="col-md-3 mb-3">
         <a href="mystory.html" class="dashboard-card d-block text-decoration-none text-dark">
@@ -140,168 +214,115 @@
           <h4>Contact 📬</h4>
           <p>Let’s Connect</p>
         </a>
-
       </div>
     </div>
   </div>
 
-
-<section class="container my-4">
-  <h2 class="text-center mb-3">📍📊 My DevOps Progress Tracker</h2>
-  <table class="table table-sm table-bordered text-center align-middle">
-    <tbody>
-      <tr>
-        <td>Git</td>
-        <td><span class="badge status-badge bg-danger" onclick="toggleStatus(this)">❌ Not Started</span></td>
-        <td>Docker</td>
-        <td><span class="badge status-badge bg-warning text-dark" onclick="toggleStatus(this)">🚧 In Progress</span></td>
-      </tr>
-      <tr>
-        <td>Jenkins</td>
-        <td><span class="badge status-badge bg-success" onclick="toggleStatus(this)">✅ Completed</span></td>
-        <td>Linux</td>
-        <td><span class="badge status-badge bg-danger" onclick="toggleStatus(this)">❌ Not Started</span></td>
-      </tr>
-      <tr>
-        <td>Terraform</td>
-        <td><span class="badge status-badge bg-danger" onclick="toggleStatus(this)">❌ Not Started</span></td>
-        <td>Cloud</td>
-        <td><span class="badge status-badge bg-danger" onclick="toggleStatus(this)">❌ Not Started</span></td>
-      </tr>
-      <tr>
-        <td>CI/CD</td>
-        <td><span class="badge status-badge bg-danger" onclick="toggleStatus(this)">❌ Not Started</span></td>
-        <td>Kubernetes</td>
-        <td><span class="badge status-badge bg-danger" onclick="toggleStatus(this)">❌ Not Started</span></td>
-      </tr>
-
-      <script>
-  const statusCycle = [
-    { class: "bg-danger", label: "❌ Not Started" },
-    { class: "bg-warning text-dark", label: "🚧 In Progress" },
-    { class: "bg-success", label: "✅ Completed" }
-  ];
-
-  function toggleStatus(el) {
-    const currentText = el.innerText.trim();
-    let currentIndex = statusCycle.findIndex(status => status.label === currentText);
-    let nextIndex = (currentIndex + 1) % statusCycle.length;
-    el.className = `badge status-badge ${statusCycle[nextIndex].class}`;
-    el.innerText = statusCycle[nextIndex].label;
-  }
-</script>
-    </tbody>
-  </table>
-</section>
-
-<style>
-  .status-badge {
-    cursor: pointer;
-    font-size: 0.9rem;
-    padding: 6px 10px;
-    border-radius: 5px;
-  }
-
-  table.table-sm th,
-  table.table-sm td {
-    padding: 0.4rem;
-  }
-</style>
-
-<script>
-  const statusCycle = [
-    { class: "bg-danger", label: "❌ Not Started" },
-    { class: "bg-warning text-dark", label: "🚧 In Progress" },
-    { class: "bg-success", label: "✅ Completed" }
-  ];
-
-  function toggleStatus(el) {
-    const currentText = el.innerText.trim();
-    let currentIndex = statusCycle.findIndex(status => status.label === currentText);
-    let nextIndex = (currentIndex + 1) % statusCycle.length;
-    el.className = `badge status-badge ${statusCycle[nextIndex].class}`;
-    el.innerText = statusCycle[nextIndex].label;
-  }
-</script>
+  <!-- Progress Tracker -->
+  <section class="container my-4">
+    <h2 class="text-center mb-3 section-title">📍📊 My DevOps Progress Tracker</h2>
+    <table class="table table-sm table-bordered text-center align-middle">
+      <tbody>
+        <tr>
+          <td>Git</td>
+          <td><span class="badge status-badge bg-danger" onclick="toggleStatus(this)">❌ Not Started</span></td>
+          <td>Docker</td>
+          <td><span class="badge status-badge bg-warning text-dark" onclick="toggleStatus(this)">🚧 In Progress</span></td>
+        </tr>
+        <tr>
+          <td>Jenkins</td>
+          <td><span class="badge status-badge bg-success" onclick="toggleStatus(this)">✅ Completed</span></td>
+          <td>Linux</td>
+          <td><span class="badge status-badge bg-danger" onclick="toggleStatus(this)">❌ Not Started</span></td>
+        </tr>
+        <tr>
+          <td>Terraform</td>
+          <td><span class="badge status-badge bg-danger" onclick="toggleStatus(this)">❌ Not Started</span></td>
+          <td>Cloud</td>
+          <td><span class="badge status-badge bg-danger" onclick="toggleStatus(this)">❌ Not Started</span></td>
+        </tr>
+        <tr>
+          <td>CI/CD</td>
+          <td><span class="badge status-badge bg-danger" onclick="toggleStatus(this)">❌ Not Started</span></td>
+          <td>Kubernetes</td>
+          <td><span class="badge status-badge bg-danger" onclick="toggleStatus(this)">❌ Not Started</span></td>
+        </tr>
       </tbody>
     </table>
-  </div>
-</section>
-
-<style>
-  .form-select {
-    font-weight: bold;
-    font-size: 1rem;
-  }
-
-  .form-select option {
-    font-weight: normal;
-  }
-</style>
-
-<script>
-  function updateStatus(selectElement) {
-    const selected = selectElement.value;
-    selectElement.classList.remove("not-started", "in-progress", "completed");
-    selectElement.classList.add(selected);
-  }
-</script>
+  </section>
 
   <!-- Tools Grid -->
   <div class="container text-center my-5" id="tools">
-    <h2 class="mb-4">🔧 DevOps Tools</h2>
-    <div class="tools-grid">
-      <a href="git.html" class="tool-box text-decoration-none text-dark">
-        <img class="tool-icon" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git">
-        <div class="tool-name">Git</div>
-      </a>
-      <a href="chef.html" class="tool-box text-decoration-none text-dark">
-        <img class="tool-icon" src="https://cdn.freebiesupply.com/logos/large/2x/chef-13-logo-png-transparent.png" alt="Chef">
-        <div class="tool-name">Chef</div>
-      </a>
-      <a href="ansible.html" class="tool-box text-decoration-none text-dark">
-        <img class="tool-icon" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" alt="Ansible">
-        <div class="tool-name">Ansible</div>
-      </a>
-      <a href="docker.html" class="tool-box text-decoration-none text-dark">
-        <img class="tool-icon" src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker">
-        <div class="tool-name">Docker</div>
-      </a>
-      <a href="kubernetes.html" class="tool-box text-decoration-none text-dark">
-        <img class="tool-icon" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes">
-        <div class="tool-name">Kubernetes</div>
-      </a>
-      <a href="cicd.html" class="tool-box text-decoration-none text-dark">
-        <img class="tool-icon" src="https://cdn0.iconfinder.com/data/icons/software-development-19/66/15_continuous_integration_uniting_system_CI_integration_CD_integration_continuous_delivery-1024.png" alt="CI/CD">
-        <div class="tool-name">CI/CD</div>
-      </a>
-      <a href="linux.html" class="tool-box text-decoration-none text-dark">
-        <img class="tool-icon" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Linux">
-        <div class="tool-name">Linux</div>
-      </a>
-      <a href="cloud Computing.html" class="tool-box text-decoration-none text-dark">
-        <img class="tool-icon" src="https://cdn-icons-png.flaticon.com/512/7213/7213255.png" alt="Cloud">
-        <div class="tool-name">Cloud Computing</div>
-      </a>
-      <a href="terraform.html" class="tool-box text-decoration-none text-dark">
-        <img class="tool-icon" src="https://th.bing.com/th/id/OIP.GNPlDgmklFs5OuGsVzvtwgHaHa?r=0&rs=1&pid=ImgDetMain" alt="Terraform">
-        <div class="tool-name">Terraform</div>
-      </a>
-      <a href="jenkins.html" class="tool-box text-decoration-none text-dark">
-        <img class="tool-icon" src="https://www.jenkins.io/images/logos/jenkins/jenkins.png" alt="Jenkins">
-        <div class="tool-name">Jenkins</div>
-      </a>
-      <a href="maven.html" class="tool-box text-decoration-none text-dark">
-        <img class="tool-icon" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_maven_icon_130397.png" alt="Maven">
-        <div class="tool-name">Maven</div>
-      </a>
-    </div>
+  <h2 class="mb-4 section-title">🔧 DevOps Tools</h2>
+  <div class="tools-grid">
+    <a href="git.html" class="tool-box text-decoration-none text-dark">
+      <img class="tool-icon" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git">
+      <div class="tool-name">Git</div>
+    </a>
+    <a href="chef.html" class="tool-box text-decoration-none text-dark">
+      <img class="tool-icon" src="https://cdn.freebiesupply.com/logos/large/2x/chef-13-logo-png-transparent.png" alt="Chef">
+      <div class="tool-name">Chef</div>
+    </a>
+    <a href="ansible.html" class="tool-box text-decoration-none text-dark">
+      <img class="tool-icon" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" alt="Ansible">
+      <div class="tool-name">Ansible</div>
+    </a>
+    <a href="docker.html" class="tool-box text-decoration-none text-dark">
+      <img class="tool-icon" src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker">
+      <div class="tool-name">Docker</div>
+    </a>
+    <a href="kubernetes.html" class="tool-box text-decoration-none text-dark">
+      <img class="tool-icon" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes">
+      <div class="tool-name">Kubernetes</div>
+    </a>
+    <a href="cicd.html" class="tool-box text-decoration-none text-dark">
+      <img class="tool-icon" src="https://cdn0.iconfinder.com/data/icons/software-development-19/66/15_continuous_integration_uniting_system_CI_integration_CD_integration_continuous_delivery-1024.png" alt="CI/CD">
+      <div class="tool-name">CI/CD</div>
+    </a>
+    <a href="linux.html" class="tool-box text-decoration-none text-dark">
+      <img class="tool-icon" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Linux">
+      <div class="tool-name">Linux</div>
+    </a>
+    <a href="cloud Computing.html" class="tool-box text-decoration-none text-dark">
+      <img class="tool-icon" src="https://cdn-icons-png.flaticon.com/512/7213/7213255.png" alt="Cloud">
+      <div class="tool-name">Cloud Computing</div>
+    </a>
+    <a href="terraform.html" class="tool-box text-decoration-none text-dark">
+      <img class="tool-icon" src="https://th.bing.com/th/id/OIP.GNPlDgmklFs5OuGsVzvtwgHaHa?rs=1&pid=ImgDetMain" alt="Terraform">
+      <div class="tool-name">Terraform</div>
+    </a>
+    <a href="jenkins.html" class="tool-box text-decoration-none text-dark">
+      <img class="tool-icon" src="https://www.jenkins.io/images/logos/jenkins/jenkins.png" alt="Jenkins">
+      <div class="tool-name">Jenkins</div>
+    </a>
+    <a href="maven.html" class="tool-box text-decoration-none text-dark">
+      <img class="tool-icon" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_maven_icon_130397.png" alt="Maven">
+      <div class="tool-name">Maven</div>
+    </a>
   </div>
+</div>
+
 
   <!-- Footer -->
   <footer>
     <p>© 2025 | Designed by Himani Kapoor | Built with 💙 + ChatGPT + Confidence</p>
   </footer>
 
+  <!-- Toggle Status Script -->
+  <script>
+    const statusCycle = [
+      { class: "bg-danger", label: "❌ Not Started" },
+      { class: "bg-warning text-dark", label: "🚧 In Progress" },
+      { class: "bg-success", label: "✅ Completed" }
+    ];
+
+    function toggleStatus(el) {
+      const currentText = el.innerText.trim();
+      let currentIndex = statusCycle.findIndex(status => status.label === currentText);
+      let nextIndex = (currentIndex + 1) % statusCycle.length;
+      el.className = `badge status-badge ${statusCycle[nextIndex].class}`;
+      el.innerText = statusCycle[nextIndex].label;
+    }
+  </script>
 </body>
 </html>
