@@ -21,7 +21,7 @@
     }
 
     .chef-header {
-      background: linear-gradient(90deg, #FAD6A5, #ff9478);
+      background: linear-gradient(90deg, #ffb347, #ffcc33);
       color: white;
       padding: 40px 20px;
       text-align: center;
@@ -49,9 +49,9 @@
 
 
     .card {
-      width: 250px;
-      border: none;
-      border-radius: 10px;
+      width: 300px;
+      border: 5px solid #ffb347;
+      border-radius: 12px;
       background-color: #ffffff;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
@@ -81,8 +81,8 @@
     }
     .notes-section {
       background-color: #ffffff;
-      border: 2px soild #FF6F61;
-      border-radius: 10px;
+      border: 5px solid #ffb347;
+      border-radius: 12px;
       padding: 20px;
       text-align: center;
       margin-top: 30px;
@@ -124,79 +124,85 @@
     <h2 class="section-heading">What I’ve Learned in Chef</h2>
   <div class="card-grid">
 
-    <div class="card text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="mx-auto d-block" alt="Chef Basics Icon">
-      <div class="card-body">
-        <h5 class="card-title">Git Basics</h5>
-        <p class="card-text">Understand what Git is, and learn core commands like init, add, commit, status, and log.</p>
-      </div>
-    </div>
+   <div class="card text-center">
+  <img src="https://cdn-icons-png.flaticon.com/512/2784/2784445.png" class="mx-auto d-block" alt="Chef Architecture Icon">
+  <div class="card-body">
+    <h5 class="card-title">Chef Architecture</h5>
+    <p class="card-text">Learned the role of Chef Server, Workstation, Node, Ohai, and how they work together to automate infrastructure.</p>
+  </div>
+</div>
 
-    <div class="card text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/919/919847.png" class="mx-auto d-block" alt="GitHub Icon">
-      <div class="card-body">
-        <h5 class="card-title">GitHub Integration</h5>
-        <p class="card-text">Push, pull, clone and connect local repo with GitHub using SSH or HTTPS.</p>
-      </div>
-    </div>
+<div class="card text-center">
+  <img src="https://cdn-icons-png.flaticon.com/512/4153/4153005.png" class="mx-auto d-block" alt="Cookbook Icon">
+  <div class="card-body">
+    <h5 class="card-title">Cookbooks & Recipes</h5>
+    <p class="card-text">Created cookbooks and recipes to install and configure software like Apache, and manage system state effectively.</p>
+  </div>
+</div>
 
-    <div class="card text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" class="mx-auto d-block" alt="Branching Icon">
-      <div class="card-body">
-        <h5 class="card-title">Branching & Merging</h5>
-        <p class="card-text">Work with multiple branches, merge changes and resolve merge conflicts effectively.</p>
-      </div>
-    </div>
+<div class="card text-center">
+  <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" class="mx-auto d-block" alt="Linux Commands Icon">
+  <div class="card-body">
+    <h5 class="card-title">Attributes & Linux Commands</h5>
+    <p class="card-text">Used attributes to customize configurations and embedded Linux commands to create users and manage system tasks.</p>
+  </div>
+</div>
 
-    <div class="card text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/942/942790.png" class="mx-auto d-block" alt="Collaboration Icon">
-      <div class="card-body">
-        <h5 class="card-title">Team Collaboration</h5>
-        <p class="card-text">Collaborate using Git workflows like Forking, Pull Requests, and feature branching.</p>
-      </div>
-    </div>
+<div class="card text-center">
+  <img src="https://cdn-icons-png.flaticon.com/512/3159/3159066.png" class="mx-auto d-block" alt="Bootstrapping Icon">
+  <div class="card-body">
+    <h5 class="card-title">Bootstrapping Concepts</h5>
+    <p class="card-text">Understood the process of bootstrapping to connect and configure nodes remotely from the workstation using Chef.</p>
+  </div>
+</div>
+      
   </div>
 
 <!-- Handwritten Notes -->
     <h2 class="section-title">📝 My Handwritten Notes</h2>
     <div class="notes-section">
-      <p>Here are my personal notes on Git. I use them to quickly revise commands and concepts.</p>
+      <p>Here are my personal notes on Chef. I use them to quickly revise commands and concepts.</p>
       <!-- You can replace the src link with your actual image -->
-      <img src="your-handwritten-notes.jpg" alt="Handwritten Git Notes" class="notes-img">
+      <a href="https://online.fliphtml5.com/iseyp/ioou/" target="_blank" class="btn btn-outline-primary">📖 View CHEF Notes Flipbook</a>
       <p class="mt-3">If you'd like a PDF version, feel free to contact me via the Contact section.</p>
-    </div>
+</div>
 
     <!-- Projects -->
-   <div class="container my-5">
-  <h2 class="mb-4">🚀 Projects with Git</h2>
-  <div class="row text-center">
+   <h2 class="section-title">🚀 Projects with CHEF </h2>
 
     <!-- Project 1 -->
     <div class="notes-section">
      
-       <h5>CI/CD Demo Project</h5>
-          <p>A live project showing Git used in CI/CD pipeline.</p>
-          <a href="https://github.com/your-git-project" target="_blank" class="btn btn-outline-danger btn-sm">View on GitHub</a>
+       <h5>Server Configuration Automation</h5>
+          <p>Automated the setup of Apache web server using Chef Cookbooks and Recipes on a virtual machine.</p>
+          <a href="https://github.com/your-git-project" target="_blank" class="btn btn-outline-danger btn-sm">View Project Details</a>
 
     </div>
+
+
     <!-- Project 2 -->
     <div class="notes-section">
-      <h5>Version Control Portfolio</h5>
-          <p>This very website is version controlled using Git!</p>
-          <a href="https://github.com/your-website-repo" target="_blank" class="btn btn-outline-danger btn-sm">Website Repo</a>
+      <h5>Infrastructure as Code (IaC) with Chef</h5>
+          <p>>Defined and deployed consistent infrastructure using Chef Workstation and Node bootstrapping.</p>
+          <a href="https://github.com/your-website-repo" target="_blank" class="btn btn-outline-danger btn-sm">Project Coming Soon</a>
     </div>
   </div>
 </div>
- <p class="mt-5">
-      <a href="https://himanikapoor30.github.io/devopsbyhimani.github.io/">← Back to Homepage</a>
-      </p>
+<div class="my-5"></div>
+
+  <div class="text-center">
+      <a href="index.html" class="btn-primary-outline-dark rounded-pill px-4 py-2">← Back to Home</a>
+    </div>
 
   </div>
 
   <!-- Footer -->
   <footer class="text-center py-4 mt-5 text-muted">
-    &copy; 2025 Himani Kapoor | Built with Chef ❤️
+    &copy; 2025 Himani Kapoor
   </footer>
+
+
+
 
 </body>
 </html>
