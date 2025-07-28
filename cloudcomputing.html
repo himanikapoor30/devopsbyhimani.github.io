@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cloud Computing - My DevOps Space</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      background-color: #f7f8fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      background-color: #24292e;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #ffffff !important;
+    }
+
+    .cloudcomputing-header {
+      background: linear-gradient(180deg, #b2ebf2, #0097a7);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .cloudcomputing-header img {
+      max-width: 120px;
+      margin-bottom: 20px;
+    }
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+    }
+
+     .section-heading {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      border-bottom: 2px solid #FF6F61;
+      display: inline-block;
+    }
+
+
+    .card {
+      width: 250px;
+      border: 5px solid #0097a7;
+      border-radius: 12px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 60px;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .card-body h5 {
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      border-bottom: 2px solid #FF6F61;
+      display: inline-block;
+    }
+    .notes-section {
+      background-color: #ffffff;
+      border: 5px solid #0097a7;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .notes-img {
+      width: 100%;
+      max-width: 600px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+  
+
+  </style>
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My DevOps Space</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="tools.html">Tools Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="notes.html">Notes</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="cloudcomputing-header">
+    <img src="https://cdn-icons-png.flaticon.com/512/7213/7213255.png" alt="Cloud Computing Logo" />
+    <h1>Cloud Computing: Version Control Mastery</h1>
+    <p1>Explore what I’ve learned and built using Cloud Computing in my DevOps journey.</p1>
+  </div>
+
+    <h2 class="section-heading">What I’ve Learned in Cloud Computing</h2>
+<div class="card-grid">
+
+  <!-- 1. Cloud Foundations -->
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4144/4144480.png" class="mx-auto d-block" alt="Cloud Foundations Icon">
+    <div class="card-body">
+      <h5 class="card-title">Cloud Foundations</h5>
+      <p class="card-text">What cloud computing is, why it’s used, service models (IaaS, PaaS, SaaS), and deployment models (public, private, hybrid, multi-cloud).</p>
+    </div>
+  </div>
+
+  <!-- 2. Compute & Containers -->
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" class="mx-auto d-block" alt="Compute & Containers Icon">
+    <div class="card-body">
+      <h5 class="card-title">Compute & Containers</h5>
+      <p class="card-text">VMs, hypervisors, autoscaling concepts, and container basics (images, containers) with when to choose VMs vs. containers.</p>
+    </div>
+  </div>
+
+  <!-- 3. Storage & Databases -->
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/3208/3208670.png" class="mx-auto d-block" alt="Storage & Databases Icon">
+    <div class="card-body">
+      <h5 class="card-title">Storage & Databases</h5>
+      <p class="card-text">Object, block, and file storage; managed databases (RDS/Cloud SQL) basics; backups, snapshots, and lifecycle policies.</p>
+    </div>
+  </div>
+
+  <!-- 4. Networking Basics -->
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/2972/2972557.png" class="mx-auto d-block" alt="Networking Basics Icon">
+    <div class="card-body">
+      <h5 class="card-title">Networking Basics</h5>
+      <p class="card-text">OSI vs TCP/IP, IP addressing, CIDR/subnet masks, ports & protocols (TCP/UDP), DNS, and HTTP/HTTPS fundamentals.</p>
+    </div>
+  </div>
+
+  <!-- 5. Cloud Networking (VPC/VNet) -->
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/2706/2706965.png" class="mx-auto d-block" alt="Cloud Networking Icon">
+    <div class="card-body">
+      <h5 class="card-title">Cloud Networking (VPC/VNet)</h5>
+      <p class="card-text">VPC/VNet, public & private subnets, route tables, Internet/NAT gateways, security groups & NACLs, and load balancers.</p>
+    </div>
+  </div>
+
+  <!-- 6. Security, Monitoring & Cost -->
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4467/4467567.png" class="mx-auto d-block" alt="Security & Monitoring Icon">
+    <div class="card-body">
+      <h5 class="card-title">Security, Monitoring & Cost</h5>
+      <p class="card-text">IAM (users, roles, policies), encryption at rest/in transit, logging & monitoring, tagging, budgets, and cost optimization basics.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Handwritten Notes -->
+    <h2 class="section-title">📝 My Handwritten Notes</h2>
+    <div class="notes-section">
+      <p>Here are my personal notes on Cloud Computing. I use them to quickly revise commands and concepts.</p>
+      <!-- You can replace the src link with your actual image -->
+     <a href="https://online.fliphtml5.com/iseyp/oapb/" target="_blank" class="btn btn-outline-primary">📖 View CLOUD COMPUTING Notes Flipbook</a>
+
+      <p class="mt-3">If you'd like a PDF version, feel free to contact me via the Contact section.</p>
+    </div>
+
+<div class="my-5"></div>
+
+
+
+  <div class="text-center">
+      <a href="index.html" class="btn-primary-outline-dark rounded-pill px-4 py-2">← Back to Home</a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5 text-muted">
+    &copy; 2025 Himani Kapoor
+  </footer>
+
+
+</body>
+</html>
