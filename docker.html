@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Docker - My DevOps Space</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      background-color: #f7f8fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      background-color: #24292e;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #ffffff !important;
+    }
+
+    .docker-header {
+      background: linear-gradient(180deg, #c8e6f8,#0097a7);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      min-height: 320px;
+    }
+    .docker-header img {
+      max-width: 120px;
+      margin-bottom: 20px;
+    }
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+    }
+
+     .section-heading {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      border-bottom: 2px solid #FF6F61;
+      display: inline-block;
+    }
+
+
+    .card {
+      width: 250px;
+      border: 5px solid #006994;
+      border-radius: 12px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 60px;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .card-body h5 {
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      border-bottom: 2px solid #FF6F61;
+      display: inline-block;
+    }
+    .notes-section {
+      background-color: #ffffff;
+      border: 5px solid #006994;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .notes-img {
+      width: 100%;
+      max-width: 600px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+  
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My DevOps Space</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#tools">Tools Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="notes.html">Notes</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="docker-header">
+    <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="docker Logo" />
+    <h1>Docker: The Containerization Mastery</h1>
+    <p1>Explore what I’ve learned and built using Docker in my DevOps journey.</p1>
+  </div>
+
+    <h2 class="section-heading">👨🏻‍🎓What I’ve Learned in Docker</h2>
+  <div class="card-grid">
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" class="mx-auto d-block" alt="Docker Basics Icon">
+    <div class="card-body">
+      <h5 class="card-title">Docker Introduction</h5>
+      <p class="card-text">Covered Docker concepts, architecture, components, advantages, and limitations. Understood how Docker differs from traditional virtualization.</p>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/3372/3372097.png" class="mx-auto d-block" alt="Docker Commands Icon">
+    <div class="card-body">
+      <h5 class="card-title">Core Docker Commands</h5>
+      <p class="card-text">Learned and practiced essential commands: <code>docker run</code>, <code>ps</code>, <code>rm</code>, <code>images</code>, <code>rmi</code>, <code>pull</code>, <code>exec</code>, etc.</p>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" class="mx-auto d-block" alt="Dockerfile Icon">
+    <div class="card-body">
+      <h5 class="card-title">Dockerfile & Image Handling</h5>
+      <p class="card-text">Understood image lifecycle: pulling, tagging, and removing. Also explored Dockerfile structure and key instructions like FROM, CMD, COPY.</p>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4228/4228813.png" class="mx-auto d-block" alt="Docker Volumes Icon">
+    <div class="card-body">
+      <h5 class="card-title">Volumes & Port Exposure</h5>
+      <p class="card-text">Learned Docker volumes for data persistence and practiced exposing ports and container-networking for app communication.</p>
+    </div>
+  </div>
+
+</div>
+<!-- Handwritten Notes -->
+    <h2 class="section-title">📝 My Handwritten Notes</h2>
+    <div class="notes-section">
+      <p>Here are my personal notes on Docker. I use them to quickly revise commands and concepts.</p>
+      <!-- You can replace the src link with your actual image -->
+     <a href="######" target="_blank" class="btn btn-outline-primary">📖 View DOCKER Notes Flipbook</a>
+      <p class="mt-3">If you'd like a PDF version, feel free to contact me via the Contact section.</p>
+    </div>
+
+    <!-- Projects -->
+    <h2 class="section-title">🚀 Projects with DOCKER </h2> 
+
+    <!-- Project 1 -->
+    <div class="notes-section">
+     
+       <h5>Containerizing My DevOps Portfolio</h5>
+          <p>Built a Docker image for my DevOps portfolio website and deployed it using a custom Dockerfile and container lifecycle commands.</p>
+          <a href="https://Dockerhub.com/your-Docker-project" target="_blank" class="btn btn-outline-danger btn-sm">View Project on DockerHub</a>
+
+    </div>
+
+
+    <!-- Project 2 -->
+    <div class="notes-section">
+      <h5>Docker Basics Playground</h5>
+          <p>Practiced Docker fundamentals: pulled images, exposed containers, mounted volumes, built custom images, and explored container commands.</p>
+          <a href="https://Dockerhub.com/your-website-repo" target="_blank" class="btn btn-outline-danger btn-sm">View Project</a>
+
+    </div>
+  </div>
+</div>
+
+   <div class="my-5"></div>
+
+  <div class="text-center">
+      <a href="index.html" class="btn-primary-outline-dark rounded-pill px-4 py-2">← Back to Home</a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5 text-muted">
+    &copy; 2025 Himani Kapoor
+  </footer>
+
+</body>
+</html>
