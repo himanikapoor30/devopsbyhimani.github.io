@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terraform - My DevOps Space</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      background-color: #f7f8fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      background-color: #24292e;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #ffffff !important;
+    }
+
+    .terraform-header {
+      background: linear-gradient(90deg, #5C258D, #4389A2);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .terraform-header img {
+      max-width: 120px;
+      margin-bottom: 20px;
+    }
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+    }
+
+     .section-heading {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      border-bottom: 2px solid #FF6F61;
+      display: inline-block;
+    }
+
+
+    .card {
+      width: 250px;
+      border: 5px solid #4389A2;
+      border-radius: 12px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 60px;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .card-body h5 {
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      border-bottom: 2px solid #FF6F61;
+      display: inline-block;
+    }
+    .notes-section {
+      background-color: #ffffff;
+      border: 5px solid #4389A2;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .notes-img {
+      width: 100%;
+      max-width: 600px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+  
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My DevOps Space</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#tools">Tools Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="notes.html">Notes</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="terraform-header">
+    <img src="https://th.bing.com/th/id/OIP.GNPlDgmklFs5OuGsVzvtwgHaHa?rs=1&pid=ImgDetMain" alt="Terraform Logo" />
+    <h1>Terraform: Infrastructure as Code</h1>
+    <p1>Discover how I used Terraform to define and provision infrastructure with code.</p1>
+  </div>
+
+   <h2 class="section-heading">👨🏻‍🎓What I’ve Learned in Terraform</h2>
+<div class="card-grid">
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/5529/5529752.png" class="mx-auto d-block" alt="Terraform Intro Icon">
+    <div class="card-body">
+      <h5 class="card-title">Terraform Basics</h5>
+      <p class="card-text">Understood Infrastructure as Code (IaC) and how Terraform helps provision and manage infrastructure declaratively using HCL.</p>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4255/4255372.png" class="mx-auto d-block" alt="Providers Icon">
+    <div class="card-body">
+      <h5 class="card-title">Providers & Resources</h5>
+      <p class="card-text">Learned how providers (like AWS) work and how to define resources like instances and networks using Terraform configuration files.</p>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4084/4084426.png" class="mx-auto d-block" alt="Commands Icon">
+    <div class="card-body">
+      <h5 class="card-title">Key Commands</h5>
+      <p class="card-text">Practiced commands like <code>init</code>, <code>plan</code>, <code>apply</code>, and <code>destroy</code> to manage infrastructure lifecycle efficiently.</p>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/3659/3659736.png" class="mx-auto d-block" alt="State Icon">
+    <div class="card-body">
+      <h5 class="card-title">State Management</h5>
+      <p class="card-text">Understood how Terraform tracks real infrastructure using state files, and learned how to manage, lock, and secure state properly.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Handwritten Notes -->
+    <h2 class="section-title">📝 My Handwritten Notes</h2>
+    <div class="notes-section">
+      <p>Here are my personal notes on Terraform. I use them to quickly revise commands and concepts.</p>
+      <!-- You can replace the src link with your actual image -->
+     <a href="https://online.fliphtml5.com/iseyp/oapb/" target="_blank" class="btn btn-outline-primary">📖 View TERRAFORM Notes Flipbook</a>
+      <p class="mt-3">If you'd like a PDF version, feel free to contact me via the Contact section.</p>
+    </div>
+
+    <!-- Projects -->
+    <h2 class="section-title">🚀 Projects with TERRAFORM </h2>
+
+
+
+   <div class="notes-section">
+      <h5>CI/CD Demo Project</h5>
+      <p>A live project showing Terraform used in CI/CD pipeline.</p>
+      <a href="https://terraformhub.com/your-terraform-project" target="_blank" class="btn btn-outline-danger btn-sm">View Terraform Project</a>
+    </div>
+
+    <div class="notes-section">
+      <h5>Version Control Portfolio</h5>
+      <p>This very website is version controlled using Terraform!</p>
+      <a href="https://terraformhub.com/your-website-repo" target="_blank" class="btn btn-outline-danger btn-sm">Website Repo</a>
+    
+
+    </div>
+  </div>
+</div>
+
+  <div class="my-5"></div>
+
+  <div class="text-center">
+      <a href="index.html" class="btn-primary-outline-dark rounded-pill px-4 py-2">← Back to Home</a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5 text-muted">
+    &copy; 2025 Himani Kapoor
+  </footer>
+
+
+</body>
+</html>
