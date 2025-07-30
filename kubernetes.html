@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kubernetes - My DevOps Space</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      background-color: #f7f8fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      background-color: #24292e;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #ffffff !important;
+    }
+
+    .kubernetes-header {
+      background: linear-gradient(90deg, #5DA9E9);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .kubernetes-header img {
+      max-width: 120px;
+      margin-bottom: 20px;
+    }
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+    }
+
+     .section-heading {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      border-bottom: 2px solid #FF6F61;
+      display: inline-block;
+    }
+
+
+    .card {
+      width: 250px;
+      border: 5px solid  #5DA9E9;
+      border-radius: 12px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 60px;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .card-body h5 {
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      border-bottom: 2px solid #FF6F61;
+      display: inline-block;
+    }
+    .notes-section {
+      background-color: #ffffff;
+      border: 5px solid  #5DA9E9;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .notes-img {
+      width: 100%;
+      max-width: 600px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+  
+
+  </style>
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My DevOps Space</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#tools">Tools Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="notes.html">Notes</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="kubernetes-header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes Logo" />
+    <h1>kubernetes: Version Control Mastery</h1> 
+    <p1>Here's how I learned Kubernetes from scratch - from basic architecture to deploying containers, managing clusters and scaling applications.</p1>
+  </div>
+
+    <h2 class="section-heading">👨🏻‍🎓What I’ve Learned in kubernetes</h2>
+<div class="card-grid">
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" class="mx-auto d-block" alt="Kubernetes Intro Icon">
+    <div class="card-body">
+      <h5 class="card-title">Kubernetes Basics</h5>
+      <p class="card-text">Explored Kubernetes as a container orchestration tool. Understood how it automates deployment, scaling, and management of containerized apps.</p>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/1995/1995471.png" class="mx-auto d-block" alt="Cluster Architecture Icon">
+    <div class="card-body">
+      <h5 class="card-title">Cluster Architecture</h5>
+      <p class="card-text">Learned about Master and Worker nodes, and key components like kube-apiserver, scheduler, kubelet, and etcd within a cluster.</p>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/2572/2572697.png" class="mx-auto d-block" alt="Pods and Deployments Icon">
+    <div class="card-body">
+      <h5 class="card-title">Pods & Deployments</h5>
+      <p class="card-text">Understood how Pods group containers, and how Deployments manage the desired state and rolling updates in Kubernetes.</p>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" class="mx-auto d-block" alt="Services Icon">
+    <div class="card-body">
+      <h5 class="card-title">Services & Networking</h5>
+      <p class="card-text">Learned about ClusterIP, NodePort, and LoadBalancer services for exposing Pods and enabling stable communication.</p>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4470/4470882.png" class="mx-auto d-block" alt="YAML Icon">
+    <div class="card-body">
+      <h5 class="card-title">YAML & kubectl</h5>
+      <p class="card-text">Practiced writing resource manifests in YAML and running commands using <code>kubectl</code> to create, describe, and delete resources.</p>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" class="mx-auto d-block" alt="Helm Icon">
+    <div class="card-body">
+      <h5 class="card-title">Helm Basics</h5>
+      <p class="card-text">Got introduced to Helm as a Kubernetes package manager. Explored Helm charts for templating and reusable app deployment.</p>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" class="mx-auto d-block" alt="ReplicaSets & Scaling Icon">
+    <div class="card-body">
+      <h5 class="card-title">ReplicaSets & Scaling</h5>
+      <p class="card-text">Learned how ReplicaSets ensure the desired number of pod replicas are running and how Kubernetes handles scaling workloads up or down.</p>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4445/4445927.png" class="mx-auto d-block" alt="Monitoring and Logs Icon">
+    <div class="card-body">
+      <h5 class="card-title">Monitoring & Logs</h5>
+      <p class="card-text">Explored methods to monitor clusters using tools like <code>kubectl logs</code> and describe commands for troubleshooting live applications.</p>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Handwritten Notes -->
+    <h2 class="section-title">📝 My Handwritten Notes</h2>
+    <div class="notes-section">
+      <p>Here are my personal notes on kubernetes. I use them to quickly revise commands and concepts.</p>
+      <!-- You can replace the src link with your actual image -->
+      <a href="https://online.fliphtml5.com/iseyp/oapb/" target="_blank" class="btn btn-outline-primary">📖 View KUBERNETES Notes Flipbook</a>
+      <p class="mt-3">If you'd like a PDF version, feel free to contact me via the Contact section.</p>
+    </div>
+
+    <!-- Projects -->
+    <h2 class="section-title">🚀 Projects with KUBERNETES </h2>
+
+
+
+   <div class="notes-section">
+      <h5>Kubernetes Deployment</h5>
+      <p>Deployed a containerized Node.js app using Deployments, Services, and ConfigMaps in Kubernetes.</p>
+      <a href="https://kubehub.com/deployment-demo" target="_blank" class="btn btn-outline-danger btn-sm">View K8s Project</a>
+    </div>
+
+    <div class="notes-section">
+      <h5>Kubernetes + Helm Charts</h5>
+      <p>Managed complex Kubernetes deployments using custom Helm charts.</p>
+      <a href="https://kubehub.com/helm-project" target="_blank" class="btn btn-outline-danger btn-sm">View Helm Project</a>
+    
+
+    </div>
+  </div>
+</div>
+
+  <div class="my-5"></div>
+
+  <div class="text-center">
+      <a href="index.html" class="btn-primary-outline-dark rounded-pill px-4 py-2">← Back to Home</a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5 text-muted">
+    &copy; 2025 Himani Kapoor
+  </footer>
+
+
+</body>
+</html>
