@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects – Himani Kapoor</title>
+
+  <!-- Animate.css for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: 600;
+      font-size: 1.10rem;
+      color: #333 !important;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      background: linear-gradient(to right, #fff0f5, #f0f0ff);
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero h1 {
+      font-weight: 700;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: #333;
+      animation: fadeInUp 1s ease-in-out
+    }
+
+    .project-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .project-card {
+      background-color: #fff;
+      border: 3px solid #007BFF;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+      margin-bottom: 30px;
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+
+    .project-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #007BFF;
+    }
+
+    .project-description {
+      font-size: 1.05rem;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .btn-back {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background-color: #0056b3;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      font-size: 0.95rem;
+      margin-top: 60px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My DevOps Space</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tools">Tools Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="notes.html">Notes</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="animate__animated animate__fadeInDown">🛠️ My DevOps Projects</h1>
+    <p>Real-world applications of tools, techniques, and automation skills I've learned.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="project-section">
+    <h2 class="section-title">🚀 Featured Projects</h2>
+
+    <!-- Project 1 -->
+   <div class="project-card">
+     <div class="project-title">
+       <a href="https://github.com/yourusername/jenkins-docker-pipeline" target="_blank">
+         CI/CD Pipeline with Jenkins, Git, and Docker
+       </a>
+     </div>
+     <p class="project-description">
+       A complete CI/CD pipeline built using Jenkins, integrated with Git for source control and Docker for containerization.
+       It automatically builds, tests, and deploys applications to a containerized environment upon code push.
+     </p>
+   </div>
+
+   <!-- Project 2 -->
+   <div class="project-card">
+     <div class="project-title">
+       <a href="https://github.com/yourusername/k8s-helm-deployment" target="_blank">
+         Kubernetes Deployment with Helm Charts
+       </a>
+     </div>
+     <p class="project-description">
+       Deployed a containerized application to a Kubernetes cluster using custom Helm charts. Configured services, ingress,
+       and monitored performance using Prometheus and Grafana.
+     </p>
+   </div>
+
+   <!-- Project 3 -->
+   <div class="project-card">
+     <div class="project-title">
+       <a href="https://github.com/yourusername/terraform-iac-aws" target="_blank">
+         Infrastructure as Code with Terraform & AWS
+       </a>
+     </div>
+     <p class="project-description">
+       Created reusable Terraform modules to provision cloud infrastructure on AWS, including EC2 instances, S3 buckets,
+       and IAM roles, with state management using remote backend and proper variable structuring.
+     </p>
+   </div>
+
+   <!-- Project 4 -->
+   <div class="project-card">
+     <div class="project-title">
+       <a href="https://github.com/yourusername/config-mgmt-chef-ansible" target="_blank">
+         Configuration Management with Chef and Ansible
+       </a>
+     </div>
+     <p class="project-description">
+       Developed recipes and playbooks to automate system configuration and software installations on multiple nodes.
+       Managed system state, handled idempotency, and improved consistency across environments.
+     </p>
+   </div>
+
+ </div>
+
+
+    <!-- Add more projects if needed -->
+
+    <div class="text-center">
+      <a href="index.html" class="btn-back">← Back to Home</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2025 | Designed by Himani Kapoor
+  </div>
+
+</body>
+</html>
