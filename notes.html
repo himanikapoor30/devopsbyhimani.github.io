@@ -14,34 +14,25 @@
       padding: 0;
     }
 
-    }
+    /* Navbar */
     .navbar {
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    .navbar-brand {
-      font-weight: bold;
-      font-size: 1.5rem;
-    }
-    .navbar-center-title {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      font-weight: bold;
-      font-size: 1.5rem;
-      color: #333;
-    }
-    .navbar-nav .nav-link {
-      font-weight: 600;
-      font-size: 1.10rem;
-      color: #333 !important;
-   
+      background-color: #000;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-        .hero {
-      padding: 60px 20px;
-      background: linear-gradient(to right, #fff0f5, #f0f0ff);
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      color: #ffd54f;
     }
 
     .brand {
@@ -90,7 +81,7 @@
     .note-card:hover {
         box-shadow: 0 0 15px rgba(26, 115, 232, 0.5), 0 0 25px rgba(52, 168, 83, 0.5);
         transform: translateY(-3px);
-        
+
     }
 
     .note-card img {
@@ -109,7 +100,7 @@
 
     .note-card a:hover {
       color: #1a73e8; /* or any pop color */
-      
+
     }
 
     footer {
@@ -242,17 +233,20 @@
     <p>JENKINS Notes</p>
     </a>
     </div>
-   
+
     <div class="note-card">
     <a href="maven-notes.html" class="note-link">
     <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_maven_icon_130397.png" alt="Maven Logo" />
     <p>MAVEN Notes</p>
     </a>
     </div>
+   </div>
 
+    <div class="note-card">
    <div class="note-card">
     <a href="nagios-notes.html" class="note-link">
     <img src="https://cdn.brandfetch.io/id3N_MbDXn/w/320/h/320/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Nagios Logo" />
+    <p>Nagios Notes</p>
     <p>NAGIOS Notes</p>
     </a>
     </div>
@@ -263,7 +257,7 @@
       <a href="index.html" class="btn-primary-outline-dark rounded-pill px-4 py-2">← Back to Home</a>
     </div>
 
- 
+
 
   <!-- Footer -->
   <footer class="text-center py-4 mt-5 text-muted">
