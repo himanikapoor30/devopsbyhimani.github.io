@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Notes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #e3f2fd, #f3e5f5);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #000;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      color: #ffd54f;
+    }
+
+    .brand {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .h1 {
+      padding: 40px 20px;
+      background: linear-gradient(to right, #fff0f5, #f0f0ff);
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+       font-weight: 700;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    p.description {
+      text-align: center;
+      color: #555;
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+
+    .notes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      padding: 0 40px 40px;
+      width: 1300px;
+      margin: auto;
+    }
+
+    .note-card {
+      padding: 20px;
+      text-align: center;
+      border-radius: 35px;
+      border: 5px solid;
+      border-image: linear-gradient(45deg, #1a73e8, #34a853) 1;
+      transition: all 0.3s ease;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+     cursor: pointer;
+    }
+
+    .note-card:hover {
+        box-shadow: 0 0 15px rgba(26, 115, 232, 0.5), 0 0 25px rgba(52, 168, 83, 0.5);
+        transform: translateY(-3px);
+        
+    }
+
+    .note-card img {
+      height: 100px;
+      margin: 10px;
+    }
+
+    .note-card a {
+      display: inline-block;
+      margin-top: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #2c3e50;
+      font-size: 1.5rem;
+    }
+
+    .note-card a:hover {
+      color: #1a73e8; /* or any pop color */
+      
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+     .note-link p {
+     font-weight: 600;
+     color: #1a73e8;
+     transition: all 0.3s ease;
+     text-decoration: none;
+   }
+
+    .note-link:hover p {
+    text-decoration: underline;
+    color: #0c47b7;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar a {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="brand">My DevOps Space</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="index.html#tools">Tools Dashboard</a>
+      <a href="notes.html">Notes</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class ="h1">
+  <h1>📒 My DevOps Notes</h1>
+  <p class="description">Here are my handwritten notes for each DevOps tool — organized and accessible in one place!</p>
+  </div>
+  </div>
+
+  <div class="notes-grid">
+    <div class="note-card">
+    <a href="git-notes.html" class="note-link">
+    <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo" />
+    <p>GIT Notes</p>
+    </a>
+    </div>
+
+    <div class="note-card">
+    <a href="chef-notes.html" class="note-link">
+    <img src="https://cdn.freebiesupply.com/logos/large/2x/chef-13-logo-png-transparent.png" alt="Chef Logo" />
+    <p>CHEF Notes</p>
+    </a>
+    </div>
+
+
+   <div class="note-card">
+    <a href="ansible-notes.html" class="note-link">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" alt="Ansible Logo" />
+    <p>ANSIBLE Notes</p>
+    </a>
+    </div>
+
+
+   <div class="note-card">
+    <a href="docker-notes.html" class="note-link">
+    <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker Logo" />
+    <p>DOCKER Notes</p>
+    </a>
+    </div>
+
+
+   <div class="note-card">
+    <a href="kubernetes-notes.html" class="note-link">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes Logo" />
+    <p>KUBERNETES Notes</p>
+    </a>
+    </div>
+
+
+    <div class="note-card">
+    <a href="cicd-notes.html" class="note-link">
+    <img src="https://cdn0.iconfinder.com/data/icons/software-development-19/66/15_continuous_integration_uniting_system_CI_integration_CD_integration_continuous_delivery-1024.png" alt="CICD Logo" />
+    <p>CI/CD Notes</p>
+    </a>
+    </div>
+
+
+    <div class="note-card">
+    <a href="linux-notes.html" class="note-link">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png"" alt="Linux Logo" />
+    <p>LINUX Notes</p>
+    </a>
+    </div>
+
+
+   <div class="note-card">
+    <a href="cloudcomputing-notes.html" class="note-link">
+    <img src="https://cdn-icons-png.flaticon.com/512/7213/7213255.png" alt="CloudcomputingLogo" />
+    <p>CLOUD COMPUTING Notes</p>
+    </a>
+    </div>
+
+
+    <div class="note-card">
+    <a href="terraform-notes.html" class="note-link">
+    <img src="https://th.bing.com/th/id/OIP.GNPlDgmklFs5OuGsVzvtwgHaHa?rs=1&pid=ImgDetMain" alt="Terraform Logo" />
+    <p>TERRAFORM Notes</p>
+    </a>
+    </div>
+
+
+    <div class="note-card">
+    <a href="jenkins-notes.html" class="note-link">
+    <img src="https://www.jenkins.io/images/logos/jenkins/jenkins.png" alt="Jenkins Logo" />
+    <p>JENKINS Notes</p>
+    </a>
+    </div>
+   
+    <div class="note-card">
+    <a href="maven-notes.html" class="note-link">
+    <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_maven_icon_130397.png" alt="Maven Logo" />
+    <p>MAVEN Notes</p>
+    </a>
+    </div>
+   </div>
+
+  <div class="text-center">
+      <a href="index.html" class="btn-primary-outline-dark rounded-pill px-4 py-2">← Back to Home</a>
+    </div>
+
+ 
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5 text-muted">
+    &copy; 2025 Himani Kapoor
+  </footer>
+
+
+
+</body>
+</html>
